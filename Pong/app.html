@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+</head>
+<body>
+    <canvas width="700" height="500"></canvas>
+    <script src="board.js"></script>
+    <script src="paddle.js"></script>
+    <script src="ball.js"></script>
+    <script src="./game.js"></script>
+    <script>
+        const canvas = document.querySelector('canvas');
+        //Beginning Game
+        let game = new Game(canvas);
+        game.play();
+    </script>
+</body>
+</html>
